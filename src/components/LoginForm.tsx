@@ -34,7 +34,7 @@ const LoginForm: React.FC = () => {
           <div className="text-center mb-8">
             <div className="text-center mb-8">
               <img
-                src="/images/logo-klikomedia.png"
+                src="/logo-klikomedia.png"
                 alt="Logo"
                 className="w-full max-w-xs h-auto mx-auto mb-4 object-contain"
               />
