@@ -3,7 +3,7 @@ import { useAuth } from '../contexts/AuthContext'
 import ClientList from './ClientList'
 import ClientForm from './ClientForm'
 import { supabase, type Client } from '../lib/supabase'
-import { Plus, Users, DollarSign, TrendingUp, LogOut } from 'lucide-react'
+import { Plus, Users, TrendingUp, LogOut, Wallet } from 'lucide-react'
 
 const Dashboard: React.FC = () => {
   const { logout, user } = useAuth()
@@ -129,7 +129,7 @@ const Dashboard: React.FC = () => {
           <div className="bg-white rounded-xl shadow-sm p-6">
             <div className="flex items-center">
               <div className="bg-green-100 p-3 rounded-lg">
-                <DollarSign className="w-6 h-6 text-green-600" />
+                <Wallet className="w-6 h-6 text-green-600" />
               </div>
               <div className="mr-4">
                 <p className="text-sm text-gray-600">إجمالي الإيرادات</p>
@@ -153,7 +153,7 @@ const Dashboard: React.FC = () => {
           <div className="bg-white rounded-xl shadow-sm p-6">
             <div className="flex items-center">
               <div className="bg-amber-100 p-3 rounded-lg">
-                <DollarSign className="w-6 h-6 text-amber-600" />
+                <Wallet className="w-6 h-6 text-amber-600" />
               </div>
               <div className="mr-4">
                 <p className="text-sm text-gray-600">المبلغ المتبقي</p>

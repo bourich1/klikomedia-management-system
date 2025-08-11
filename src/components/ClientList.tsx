@@ -10,7 +10,7 @@ interface ClientListProps {
 
 const ClientList: React.FC<ClientListProps> = ({ clients, onEditClient, onDeleteClient }) => {
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('ar-SA')
+    return new Date(dateString).toLocaleDateString('en-US')
   }
 
   const getPaymentStatus = (client: Client) => {

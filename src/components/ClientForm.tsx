@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { supabase, type Client } from '../lib/supabase'
-import { X, Save, User, DollarSign, Calendar } from 'lucide-react'
+import { X, Save, User, Calendar, Wallet } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 
 interface ClientFormProps {
@@ -140,7 +140,7 @@ const ClientForm: React.FC<ClientFormProps> = ({ client, onClose }) => {
                 step="0.01"
                 required
               />
-              <DollarSign className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <Wallet className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             </div>
           </div>
 
@@ -161,7 +161,7 @@ const ClientForm: React.FC<ClientFormProps> = ({ client, onClose }) => {
                 step="0.01"
                 required
               />
-              <DollarSign className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <Wallet className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             </div>
           </div>
 
