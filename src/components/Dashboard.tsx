@@ -6,7 +6,7 @@ import { supabase, type Client } from '../lib/supabase'
 import { Plus, Users, TrendingUp, LogOut, Wallet } from 'lucide-react'
 
 const Dashboard: React.FC = () => {
-  const { logout } = useAuth()
+  const { logout , user } = useAuth()
   const [clients, setClients] = useState<Client[]>([])
   const [loading, setLoading] = useState(true)
   const [showForm, setShowForm] = useState(false)
